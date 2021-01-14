@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "imt-audio": "/components/imt-audio/imt-audio",
+    "uni-swiper": "/components/uni-swiper/uni-swiper"
+  }
+}

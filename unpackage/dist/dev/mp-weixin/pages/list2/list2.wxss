@@ -1,0 +1,458 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.cardSwiper {
+  height: 100%;
+}
+.cardSwiper .swiper-item {
+  height: 100%;
+  overflow: initial;
+}
+.cardSwiper .swiper-item view {
+  width: 100%;
+  display: block;
+  height: 100%;
+  border-radius: 20rpx;
+  opacity: 1;
+  -webkit-transition: all 0.1s ease-in 0s;
+  transition: all 0.1s ease-in 0s;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.cardSwiper .cur view {
+  -webkit-transform: initial !important;
+          transform: initial !important;
+  opacity: 1;
+  -webkit-transition: all 0.1s ease-in 0s;
+  transition: all 0.1s ease-in 0s;
+}
+.swiper-item .swiper-item-box {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.swiper-text-box {
+  width: 100%;
+  padding: 25rpx;
+  box-sizing: border-box;
+  position: absolute;
+  top: 30rpx;
+  left: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.swiper-text-box text {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+.swiper-text-box .swiperText, .swiper-text-box .descText {
+  color: #ffffff;
+  z-index: 2;
+}
+.swiper-text-box .swiperText {
+  font-size: 40rpx;
+  margin-bottom: 10rpx;
+}
+.swiper-text-box .descText {
+  font-size: 20rpx;
+}
+.screen-swiper image {
+  width: 100%;
+  height: 100%;
+}
+.screen-swiper video,
+.swiper-item video {
+  width: 100%;
+  display: block;
+  height: 100%;
+}
+.swiperContent {
+  width: 100%;
+  height: 100%;
+}
+
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.bg-box {
+  position: relative;
+  height: 323rpx;
+}
+.bg-box .space {
+  height: 150rpx;
+}
+.tab {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  margin-top: 20rpx;
+}
+.tab .item {
+  width: 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  color: #888888;
+  font-size: 36rpx;
+}
+.tab .item.on {
+  color: #282828;
+  position: relative;
+}
+.tab .item.on image {
+  width: 150rpx;
+  height: 26rpx;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -75rpx;
+}
+.tab .item.on text {
+  z-index: 2;
+}
+.my-swiper {
+  width: 686rpx;
+  height: 248rpx;
+  margin-left: 32rpx;
+  border-radius: 20rpx;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  background-color: #FFFFFF;
+  margin-top: 20rpx;
+}
+.list-box {
+  background-color: #FFFFFF;
+}
+.list-box .item {
+  padding: 40rpx;
+  border-bottom: 1rpx solid #F1F1F1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+}
+.list-box .item:last-of-type {
+  border-bottom: 0;
+}
+.list-box .item .left {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  width: 390rpx;
+}
+.list-box .item .left .title {
+  width: 100%;
+  font-size: 32rpx;
+  line-height: 42rpx;
+  max-height: 84rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.list-box .item .left .biaoqian {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.list-box .item .left .biaoqian text {
+  padding: 5rpx 10rpx;
+  background: rgba(1, 206, 208, 0.1);
+  color: #01CED0;
+  font-size: 20rpx;
+  margin-right: 10rpx;
+  border-radius: 10rpx;
+}
+.list-box .item .left .info {
+  width: 100%;
+}
+.list-box .item .left .info .text-box {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  margin-bottom: 10rpx;
+}
+.list-box .item .left .info .text-box:last-of-type {
+  margin: 0;
+}
+.list-box .item .left .info .text-box .icon {
+  font-size: 24rpx;
+  margin-right: 5rpx;
+  color: #01CED0;
+}
+.list-box .item .left .info .text-box .text {
+  width: 368rpx;
+  font-size: 24rpx;
+  color: #999999;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.list-box .item .left .info.info-right .text,
+.list-box .item .left .info.info-right .time {
+  width: 368rpx;
+  font-size: 24rpx;
+  color: #999999;
+  line-height: 34rpx;
+  max-height: 68rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.list-box .item .right {
+  width: 260rpx;
+  height: 198rpx;
+  position: relative;
+  border-radius: 20rpx;
+  overflow: hidden;
+}
+.list-box .item .right .bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.list-box .item .right .hot {
+  width: 80rpx;
+  position: absolute;
+  top: 0rpx;
+  left: 0rpx;
+}
+.list-box .item .right .comment {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  position: absolute;
+  bottom: 10rpx;
+  right: 10rpx;
+}
+.list-box .item .right .comment .text {
+  font-size: 20rpx;
+  color: #FFFFFF;
+}
+.list-box .item .right .comment image {
+  width: 22rpx;
+  margin-left: 10rpx;
+}
+.list-box-2 {
+  padding: 0 40rpx;
+  margin-top: 40rpx;
+}
+.list-box-2 .item {
+  padding: 20rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  box-shadow: 0 2rpx 21rpx 0 rgba(82, 89, 87, 0.19);
+  border-radius: 20rpx;
+  margin-bottom: 30rpx;
+}
+.list-box-2 .item:last-of-type {
+  margin-bottom: 0;
+}
+.list-box-2 .item .left {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  width: 100%;
+}
+.list-box-2 .item .left .title {
+  width: 100%;
+  font-size: 32rpx;
+  line-height: 42rpx;
+  max-height: 84rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  margin: 10rpx 0;
+}
+.list-box-2 .item .left .info {
+  width: 100%;
+}
+.list-box-2 .item .left .info .text-box {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  margin-bottom: 10rpx;
+}
+.list-box-2 .item .left .info .text-box:last-of-type {
+  margin: 0;
+}
+.list-box-2 .item .left .info .text-box .icon {
+  font-size: 24rpx;
+  margin-right: 5rpx;
+}
+.list-box-2 .item .left .info .text-box .text {
+  width: 100%;
+  font-size: 24rpx;
+  color: #999999;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.list-box-2 .item .left .info.info-right .text,
+.list-box-2 .item .left .info.info-right .time {
+  width: 100%;
+  font-size: 24rpx;
+  color: #999999;
+  line-height: 34rpx;
+  max-height: 68rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.list-box-2 .item .left .info.info-right .time {
+  margin-top: 10rpx;
+}
+.list-box-2 .item .right {
+  width: 100%;
+  height: 280rpx;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10rpx;
+}
+.list-box-2 .item .right .bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.list-box-2 .item .right .hot {
+  width: 90rpx;
+  height: 44rpx;
+  position: absolute;
+  bottom: 0rpx;
+  right: 0rpx;
+}
+.list-box-2 .item .right .comment {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  position: absolute;
+  bottom: 10rpx;
+  right: 10rpx;
+}
+.list-box-2 .item .right .comment .text {
+  font-size: 20rpx;
+  color: #FFFFFF;
+}
+.list-box-2 .item .right .comment image {
+  width: 22rpx;
+  margin-left: 10rpx;
+}
+

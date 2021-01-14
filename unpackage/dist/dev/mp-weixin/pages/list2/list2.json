@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "wfalls-flow": "/components/wfalls-flow/wfalls-flow",
+    "uni-swiper": "/components/uni-swiper/uni-swiper"
+  }
+}

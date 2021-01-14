@@ -1,0 +1,418 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.title-box {
+  height: 494rpx;
+  position: relative;
+}
+.title-box .bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.title-box .content {
+  z-index: 2;
+  border-radius: 0 80rpx 0 0;
+  padding: 30rpx 0;
+  padding-top: 40rpx;
+  padding-bottom: 0;
+  position: absolute;
+  top: 460rpx;
+  left: 0;
+  width: 100%;
+  background-color: #FFFFFF;
+}
+.title-box .content .title {
+  padding: 0rpx 30rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  margin-bottom: 20rpx;
+  box-sizing: border-box;
+  position: relative;
+}
+.title-box .content .title .title-text-box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  font-size: 30rpx;
+  font-weight: bold;
+}
+.title-box .content .title .title-text-box image {
+  width: 30rpx;
+  height: auto;
+  margin-right: 10rpx;
+}
+.title-box .content .title .title-text-box::before {
+  content: "";
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  width: 6rpx;
+  height: 24rpx;
+  border-radius: 3rpx;
+  background-color: #297CFE;
+  margin-right: 10rpx;
+}
+.title-box .content .title .title-text-box.no-border::before {
+  content: "";
+  display: none;
+}
+.title-box .content .title .more {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  font-size: 24rpx;
+  color: #999999 !important;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.title-box .content .title .more image {
+  width: 12rpx;
+  margin-left: 10rpx;
+}
+.title-box .content .biaoqian {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  padding: 0rpx 40rpx;
+  margin-bottom: 20rpx;
+}
+.title-box .content .biaoqian .item {
+  padding: 5rpx 10rpx;
+  background: rgba(41, 124, 254, 0.1);
+  color: #297CFE;
+  font-size: 20rpx;
+  margin-right: 10rpx;
+  border-radius: 10rpx;
+}
+.title-box .content .phone {
+  font-size: 24rpx;
+  color: #B4B4B4;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  padding: 20rpx 30rpx;
+  border-bottom: 1rpx solid #F1F1F1;
+}
+.title-box .content .phone .left {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.title-box .content .phone .left image {
+  width: 24rpx;
+  height: 24rpx;
+  margin-right: 10rpx;
+}
+.title-box .content .opera {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  position: absolute;
+  top: 60rpx;
+  right: 40rpx;
+}
+.title-box .content .opera .share-btn {
+  position: absolute;
+  width: 40rpx;
+  height: 90rpx;
+  background: none !important;
+  border: 0 !important;
+  top: 0rpx;
+  right: 0rpx;
+}
+.title-box .content .opera .share-btn::after {
+  border: 0 !important;
+}
+.title-box .content .opera .item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  margin-right: 40rpx;
+}
+.title-box .content .opera .item:last-of-type {
+  margin: 0;
+}
+.title-box .content .opera .item image {
+  width: 39rpx;
+  margin-bottom: 10rpx;
+}
+.title-box .content .opera .item text {
+  font-size: 24rpx;
+}
+.title-box .content .ditu {
+  margin: 20rpx 40rpx;
+  margin-top: 40rpx;
+  height: 200rpx;
+  box-sizing: border-box;
+  border-radius: 20rpx;
+  overflow: hidden;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+.title-box .content .ditu .map {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.title-box .content .ditu .title {
+  padding: 20rpx 40rpx;
+  border-radius: 20rpx;
+  background-color: #297CFE;
+  font-size: 24rpx;
+  color: #FFFFFF;
+}
+.yuyin {
+  border-top: 20rpx #F8F8F8 solid;
+  margin-top: 40rpx;
+}
+.content-box {
+  padding: 30rpx 0;
+  border-bottom: 20rpx #F8F8F8 solid;
+}
+.content-box:last-of-type {
+  border-bottom: 0;
+}
+.content-box:last-of-type {
+  border-bottom: 0;
+}
+.content-box .title {
+  padding: 0rpx 30rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  margin-bottom: 20rpx;
+  box-sizing: border-box;
+}
+.content-box .yuyin-box {
+  padding: 0rpx 40rpx;
+}
+.content-box .jieshao {
+  padding: 0 40rpx;
+}
+.pingjia {
+  box-sizing: border-box;
+  margin-top: 0;
+  border-bottom: 0;
+}
+.pingjia .more {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+.pingjia .more text {
+  font-size: 24rpx;
+  color: #999999;
+}
+.pingjia .more image {
+  width: 20rpx;
+  height: auto;
+}
+.pingjia .pingjia-item {
+  border-bottom: 1rpx solid #F1F1F1;
+  padding: 30rpx 45rpx;
+}
+.pingjia .pingjia-item .info-box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  margin-bottom: 20rpx;
+}
+.pingjia .pingjia-item .info-box .time {
+  color: #999;
+  font-size: 24rpx;
+}
+.pingjia .pingjia-item .info-box .atavar-box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.pingjia .pingjia-item .info-box .atavar-box .atavar {
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 20rpx;
+}
+.pingjia .pingjia-item .info-box .atavar-box .atavar image {
+  width: 100%;
+  height: 100%;
+}
+.pingjia .pingjia-item .info-box .atavar-box text {
+  font-size: 30rpx;
+}
+.pingjia .pingjia-item .pingjia-content {
+  line-height: 40rpx;
+  font-size: 24rpx;
+}
+.pingjia .pingjia-item .imgs {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-top: 20rpx;
+}
+.pingjia .pingjia-item .imgs .img-box {
+  width: 150rpx;
+  height: 150rpx;
+  margin-bottom: 15rpx;
+  border-radius: 8rpx;
+  overflow: hidden;
+  margin-right: 15rpx;
+}
+.pingjia .pingjia-item .imgs .img-box image {
+  width: 100%;
+  height: 100%;
+}
+.bottom {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  padding: 30rpx;
+}
+.bottom .left {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.bottom .left .item {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: column;
+          flex-flow: column;
+  margin-right: 50rpx;
+}
+.bottom .left .item:last-of-type {
+  margin-right: 0;
+}
+.bottom .left .item .share-btn {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: none !important;
+  border: 0 !important;
+  top: 0rpx;
+  right: 0rpx;
+}
+.bottom .left .item .share-btn::after {
+  border: 0 !important;
+}
+.bottom .left .item image {
+  width: 40rpx;
+  height: 40rpx;
+  margin-bottom: 10rpx;
+}
+.bottom .left .item text {
+  font-size: 24rpx;
+}
+.bottom .right {
+  padding: 20rpx;
+  border-radius: 36rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  background-color: #297CFE;
+}
+.bottom .right image {
+  width: 32rpx;
+  height: auto;
+  margin-right: 20rpx;
+}
+.bottom .right text {
+  color: #FFFFFF;
+  font-size: 26rpx;
+}
+

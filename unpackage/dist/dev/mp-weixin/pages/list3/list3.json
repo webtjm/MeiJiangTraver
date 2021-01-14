@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "uni-swiper": "/components/uni-swiper/uni-swiper"
+  }
+}

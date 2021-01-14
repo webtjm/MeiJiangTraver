@@ -1,0 +1,353 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.container {
+  width: 750rpx;
+  overflow-x: hidden;
+  padding: 30rpx;
+  box-sizing: border-box;
+}
+.banner-box {
+  width: 100%;
+  height: 168rpx;
+}
+.banner-box image {
+  width: 100%;
+  height: 100%;
+  border-radius: 18rpx;
+}
+.zuji .title-box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  height: 140rpx;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+}
+.zuji .title-box .left {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.zuji .title-box .left .title {
+  font-size: 30rpx;
+  font-weight: bold;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: column;
+          flex-flow: column;
+  position: relative;
+}
+.zuji .title-box .left .title image {
+  width: 70rpx;
+  height: 36rpx;
+  position: absolute;
+  bottom: -15rpx;
+  left: 0;
+}
+.zuji .title-box .left .tip {
+  font-size: 22rpx;
+  color: #297CFE;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+          align-items: flex-end;
+  margin-left: 15rpx;
+}
+.zuji .title-box .right {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  font-size: 24rpx;
+  color: #999999;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.zuji .title-box .right image {
+  width: 12rpx;
+  margin-left: 10rpx;
+}
+.zuji .content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.zuji .content .item {
+  width: 324rpx;
+  height: 312rpx;
+  overflow: hidden;
+  position: relative;
+  border-radius: 20rpx;
+  margin-bottom: 40rpx;
+}
+.zuji .content .item .bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+.zuji .content .item .text {
+  font-size: 28rpx;
+  color: #FFFFFF;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 25rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  box-sizing: border-box;
+  background-color: rgba(18, 56, 113, 0.4);
+}
+.info-box {
+  width: 100%;
+  height: 208rpx;
+  padding: 30rpx 60rpx;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  border-radius: 20rpx;
+  overflow: hidden;
+  box-sizing: border-box;
+  box-shadow: 0rpx 2rpx 13rpx 0rpx rgba(0, 145, 145, 0.48);
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.info-box .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+.info-box .atavar {
+  width: 110rpx;
+  height: 110rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 30rpx;
+}
+.info-box .atavar image {
+  width: 100%;
+  height: 100%;
+}
+.info-box .info {
+  height: 110rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+.info-box .info text {
+  font-size: 28rpx;
+  color: #FFFFFF;
+}
+.info-box .info text:first-of-type {
+  margin-bottom: 10rpx;
+}
+.info-box .info .phone-box {
+  font-size: 28rpx;
+  color: #333333;
+}
+.info-box .info .phone-box button {
+  padding: 10rpx;
+  line-height: unset;
+  font-size: 24rpx;
+  background-color: #FFFFFF;
+  border: 0;
+  color: #297CFE;
+}
+.info-box .info .phone-box button::after {
+  border: 0;
+}
+.serive-list {
+  padding: 40rpx 10rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+}
+.serive-list .item {
+  position: relative;
+  width: calc(100%/4);
+}
+.serive-list .item .kefu {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: none !important;
+  border: 0 !important;
+  top: 0rpx;
+  right: 0rpx;
+}
+.serive-list .item .kefu::after {
+  border: 0 !important;
+}
+.serive-list .item .item-box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: column;
+          flex-flow: column;
+}
+.serive-list .item .item-box image {
+  height: 54rpx;
+  margin-bottom: 10rpx;
+  z-index: -1;
+}
+.serive-list .item .item-box text {
+  font-size: 24rpx;
+}
+.authorize-contaner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+}
+.authorize-box {
+  background: #FFFFFF;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  z-index: 1000;
+  border-radius: 20rpx;
+  padding: 40rpx;
+}
+.authorize-box .uni-info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  margin-bottom: 20rpx;
+}
+.authorize-box .uni-info .atar {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  margin-bottom: 20rpx;
+  overflow: hidden;
+}
+.authorize-box .uni-tip {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.authorize-box .uni-tip .tipcontent {
+  color: #999;
+  font-size: 24rpx;
+  margin-top: 10rpx;
+}
+.authorize-box button {
+  width: 345rpx;
+  border: 0;
+  border-radius: 20rpx;
+  background: #297CFE;
+  color: #fff;
+  height: 80rpx;
+  font-size: 30rpx;
+  line-height: 70rpx;
+  padding: 0;
+  margin-top: 40rpx;
+}
+.authorize-box image {
+  width: 100%;
+  height: 100%;
+}
+

@@ -1,0 +1,109 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/home/home"
+		},
+		{
+			"path": "pages/map/map"
+		},
+		{
+			"path": "pages/mine/mine"
+		},
+		{
+			"path": "pages/list1/list1"
+		},
+		{
+			"path": "pages/detail/detail"
+		}
+	    ,{
+            "path" : "pages/list2/list2",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/lanmu/lanmu",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/list4/list4",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/html/html",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/list3/list3",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/list5/list5",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/pinglunForm/pinglunForm",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/pinglun/pinglun",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/myPinglun/myPinglun",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/fankuiForm/fankuiForm",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/fankuiList/fankuiList",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/lineOur/lineOur",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/search/search",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/weatherDetail/weatherDetail",
+            "style" : {}
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "走进诗画梅江",
+		"navigationBarBackgroundColor": "#297CFE",
+		"backgroundColor": "#297CFE"
+	},
+	"tabBar": {
+		"color": "#787F83",
+		"selectedColor": "#297CFE",
+		"backgroundColor": "#FFFFFF",
+		"borderStyle": "black",
+		"fontSize": "16px",
+		"spacing": "10px",
+		"list": [
+			{
+				"pagePath": "pages/home/home",
+				"text": "首页",
+				"iconPath": "static/img/home.png",
+				"selectedIconPath": "static/img/home-act.png"
+			},
+			{
+				"pagePath": "pages/map/map",
+				"text": "地图",
+				"iconPath": "static/img/map.png",
+				"selectedIconPath": "static/img/map-act.png"
+			}
+			// {
+			// 	"pagePath": "pages/mine/mine",
+			// 	"text": "我的",
+			// 	"iconPath": "static/img/my.png",
+			// 	"selectedIconPath": "static/img/my-act.png"
+			// }
+		]
+	}
+}
